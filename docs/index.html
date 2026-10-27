@@ -37,7 +37,7 @@ code{color:#ffd479}.demo{background:var(--card);border:1px solid var(--line);bor
 <body>
 <div class="wrap">
   <div class="hero">
-    <h1>ThreadLens 🔍🧵<br><span>Your JVM froze. Which thread did it?</span></h1>
+    <h1>ThreadLens <br><span>Your JVM froze. Which thread did it?</span></h1>
     <p>A zero-dependency Java CLI that X-rays a <code>jstack</code> dump: deadlocks, lock contention, wait chains and stuck threads — in seconds, offline, with a report you can hand to anyone.</p>
     <div class="dots" aria-hidden="true"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span></div>
     <div class="btns">
@@ -50,12 +50,12 @@ java -jar threadlens.jar dump.txt --format html --output report.html</pre>
 
   <h2>What it finds</h2>
   <div class="grid">
-    <div class="card"><h3>☠️ Deadlocks, for real</h3><p>Builds its own wait-for graph and finds lock cycles — even when the JDK's deadlock footer is missing.</p></div>
-    <div class="card"><h3>🔥 Most contended lock</h3><p>Every lock with holder, class and waiter list, most-contended first. 3+ waiters = a CONTENTION verdict.</p></div>
-    <div class="card"><h3>⛓️ Wait chains</h3><p>For each stuck thread, the full chain of holders it is waiting behind — not just its own stack.</p></div>
-    <div class="card"><h3>📊 States &amp; hot frames</h3><p>RUNNABLE / BLOCKED / WAITING counts, daemon split, and the top-of-stack methods your threads are actually in.</p></div>
-    <div class="card"><h3>🤖 CI-ready</h3><p><code>--fail-on deadlock</code> or <code>--fail-on blocked</code> exits 1, so a stuck service fails the gate, not the on-call.</p></div>
-    <div class="card"><h3>📄 Three report formats</h3><p>Coloured terminal text, JSON for scripts, and a single self-contained HTML file — no server, no upload.</p></div>
+    <div class="card"><h3>Deadlocks, for real</h3><p>Builds its own wait-for graph and finds lock cycles — even when the JDK's deadlock footer is missing.</p></div>
+    <div class="card"><h3>Most contended lock</h3><p>Every lock with holder, class and waiter list, most-contended first. 3+ waiters = a CONTENTION verdict.</p></div>
+    <div class="card"><h3>Wait chains</h3><p>For each stuck thread, the full chain of holders it is waiting behind — not just its own stack.</p></div>
+    <div class="card"><h3>States &amp; hot frames</h3><p>RUNNABLE / BLOCKED / WAITING counts, daemon split, and the top-of-stack methods your threads are actually in.</p></div>
+    <div class="card"><h3>CI-ready</h3><p><code>--fail-on deadlock</code> or <code>--fail-on blocked</code> exits 1, so a stuck service fails the gate, not the on-call.</p></div>
+    <div class="card"><h3>Three report formats</h3><p>Coloured terminal text, JSON for scripts, and a single self-contained HTML file — no server, no upload.</p></div>
   </div>
 
   <h2>Try the verdicts</h2>
@@ -110,7 +110,7 @@ Threads:
 java -jar build/threadlens.jar examples/deadlock.txt</pre>
   <p style="color:var(--mut)">Requirements: Java 17+. No dependencies at runtime — the jar is plain <code>javac</code> output. ThreadLens never uploads your dump; HTML reports are single self-contained files.</p>
 
-  <div class="foot">ThreadLens — day 9 of the Lens arc: AIGuard audits your code, JarLens audits your jars, CinderLens audits your speed, RepoScope audits any repo, VulnLens audits your supply chain, CommitLens audits your history, NetLens audits any address — ThreadLens audits your threads. MIT licensed. <a href="https://github.com/judd69/threadlens">github.com/judd69/threadlens</a></div>
+  <div class="foot">ThreadLens audits your threads. MIT licensed. <a href="https://github.com/judd69/threadlens">github.com/judd69/threadlens</a></div>
 </div>
 </body>
 </html>
