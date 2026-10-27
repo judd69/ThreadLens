@@ -1,0 +1,33 @@
+"cache-writer" #10 prio=5 os_prio=0 tid=0x00007f8a1001000 nid=0x2a10 runnable [0x00007f8a2000000]
+   java.lang.Thread.State: RUNNABLE
+        at com.example.Cache.put(Cache.java:33)
+        - locked <0x00000000c0010001> (a java.util.HashMap)
+
+"cache-reader-1" #11 prio=5 os_prio=0 tid=0x00007f8a1001100 nid=0x2a11 waiting for monitor entry [0x00007f8a2001000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+        at com.example.Cache.get(Cache.java:21)
+        - waiting to lock <0x00000000c0010001> (a java.util.HashMap)
+
+"cache-reader-2" #12 prio=5 os_prio=0 tid=0x00007f8a1001200 nid=0x2a12 waiting for monitor entry [0x00007f8a2002000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+        at com.example.Cache.get(Cache.java:21)
+        - waiting to lock <0x00000000c0010001> (a java.util.HashMap)
+
+"cache-reader-3" #13 prio=5 os_prio=0 tid=0x00007f8a1001300 nid=0x2a13 waiting for monitor entry [0x00007f8a2003000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+        at com.example.Cache.get(Cache.java:21)
+        - waiting to lock <0x00000000c0010001> (a java.util.HashMap)
+
+"cache-reader-4" #14 prio=5 os_prio=0 tid=0x00007f8a1001400 nid=0x2a14 waiting for monitor entry [0x00007f8a2004000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+        at com.example.Cache.get(Cache.java:21)
+        - waiting to lock <0x00000000c0010001> (a java.util.HashMap)
+
+"cache-reader-5" #15 prio=5 os_prio=0 tid=0x00007f8a1001500 nid=0x2a15 waiting for monitor entry [0x00007f8a2005000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+        at com.example.Cache.get(Cache.java:21)
+        - waiting to lock <0x00000000c0010001> (a java.util.HashMap)
+
+"main" #1 prio=5 os_prio=0 tid=0x00007f8a1000000 nid=0x2a01 runnable [0x00007f8a3000000]
+   java.lang.Thread.State: RUNNABLE
+        at com.example.App.main(App.java:15)
